@@ -7,8 +7,21 @@ function submit(tomato){
     loginForm.classList.add("hidden");
     firstmention.innerText = "Hello " + loginInput.value;
   firstmention.classList.remove("hidden");
+  localStorage.setItem("username", loginInput.value);
+  console.log(localStorage.getItem("username"));
 }
 
 
 
+
+
+const savedusername = localStorage.getItem("username")
+
+if(savedusername === null )
+{ loginForm.classList.remove("hidden") 
 loginForm.addEventListener("submit", submit);
+}
+else{
+  firstmention.classList.remove("hidden");
+  firstmention.innerText = "Hello " + savedusername;
+}
