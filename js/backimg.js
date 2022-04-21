@@ -1,5 +1,5 @@
 const imgArray = [
-    "1.jpg","2.jpeg","3.jpeg"];
+    "1.jpg","2.jpg","3.jpeg"];
 
 const choicImg = imgArray[Math.floor(Math.random()*imgArray.length)]
 
