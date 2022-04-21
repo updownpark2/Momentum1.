@@ -9,6 +9,7 @@ function submit(tomato){
   firstmention.classList.remove("hidden");
   localStorage.setItem("username", loginInput.value);
   console.log(localStorage.getItem("username"));
+
 }
 
 
